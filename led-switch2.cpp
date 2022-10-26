@@ -20,7 +20,7 @@ int main(void){
 	// when i==3, all led turn up
 	while(1){
 		if(digitalRead(BTN)){
-			i = (i + 1)%4; 
+			i = (i + 1)%3; 
 			
 			delay(20);
 		}
@@ -37,10 +37,7 @@ int main(void){
 				digitalWrite(RED,0);
 				digitalWrite(GRN,1);
 				break;
-			case 3:
-				digitalWrite(RED,1);
-				digitalWrite(GRN,1);
-				break;
+			
 			default:
 				cerr << "Error\n";
 				return 1;
