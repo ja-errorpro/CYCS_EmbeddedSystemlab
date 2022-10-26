@@ -22,7 +22,7 @@ int main(void){
 		if(digitalRead(BTN)){
 			i = (i + 1)%3; 
 			
-			delay(20);
+			delay(200);
 		}
 		switch(i){
 			case 0:
